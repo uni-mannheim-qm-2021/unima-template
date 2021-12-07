@@ -6,7 +6,7 @@ This R package provides a template for writing term papers for Uni Mannheim in R
 ``` r
 # The package isn't on CRAN - install the development version from GitHub:
 # install.packages("devtools")
-devtools::install_github("vktrsmnv/unima-template")
+devtools::install_github("uni-mannheim-qm-2021/unima-template")
 library(unima)
 ```
 
@@ -16,7 +16,8 @@ In the dialog box, click 'From Template', then find the new 'Uni Mannheim Term P
 Alternatively, you can run this line in the Console:
 
 ``` r
-rmarkdown::draft(file = "LastnameDataessay.Rmd", template = "unima", package = "unima", create_dir = TRUE)
+rmarkdown::draft(file = "LastnameDataessay.Rmd", 
+template = "unima", package = "unima", create_dir = TRUE)
 ```
 
 A new folder named *LastnameDataessay* is created, and you see an open **LastnameDataessay.Rmd** file.
@@ -27,6 +28,7 @@ By default, the template creates a subfolder inside you working directory folder
 If you want the files instead to be added to your project directory without adding an extra subfolder, run this:
 
 ``` r
-rmarkdown::draft(file = "LastnameDataessay.Rmd", template = "unima", package = "unima", create_dir = FALSE)
+rmarkdown::draft(file = "LastnameDataessay.Rmd", 
+template = "unima", package = "unima", create_dir = FALSE)
 ```
 
